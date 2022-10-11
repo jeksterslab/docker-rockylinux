@@ -1,8 +1,8 @@
 FROM rockylinux:9
 
 RUN yum -y update
+RUN yum install -y epel-release
 RUN yum install -y     \
-        epel-release   \
         apptainer      \
         apptainer-suid \
         make           \
