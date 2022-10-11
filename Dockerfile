@@ -5,7 +5,7 @@ RUN yum -y update && yum install -y \
         apptainer                   \
         apptainer-suid              \
         make                        \
-        git                         \
+        git
 RUN yum clean all
 
 # author
