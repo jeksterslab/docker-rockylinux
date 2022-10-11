@@ -1,10 +1,11 @@
 FROM rockylinux:9
 
-RUN yum -y update && yum install -y \
-        epel-release                \
-        apptainer                   \
-        apptainer-suid              \
-        make                        \
+RUN yum -y update
+RUN yum install -y     \
+        epel-release   \
+        apptainer      \
+        apptainer-suid \
+        make           \
         git
 RUN yum clean all
 
